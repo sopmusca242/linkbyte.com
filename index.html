@@ -122,11 +122,27 @@
                             <!-- Banner Left Content -->
                             <div class="info col-md-6">
                                 <div class="content inc-video">
-                                    <h1>It's time to create your <strong>Own Business scheme</strong></h1>
-                                    <p>
-                                        Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient.
-                                    </p>
-                                    <a href="#" class="btn circle btn-theme effect btn-md">Get Started</a>
+                                    <section id="start-business" class="text-center" style="padding: 60px 20px;">
+                                        <h1>Il est temps de créer votre <strong>propre projet numérique avec BryServices</strong></h1>
+                                        <p>
+                                            Des solutions personnalisées pour vous lancer efficacement : assistance informatique, formation bureautique, réseau Wi-Fi, et plus encore.
+                                        </p>
+                                    
+                                        <!-- Bouton WhatsApp intégré -->
+                                        <button onclick="sendToWhatsApp()" style="padding: 10px 25px; background-color: #25D366; color: white; border: none; border-radius: 5px; font-size: 16px;">
+                                            Nous contacter 
+                                        </button>
+                                    </section>
+                                    
+                                    <script>
+                                        function sendToWhatsApp() {
+                                            const message = `Bonjour BryServices,\nJe suis intéressé(e) par vos services et j’aimerais en savoir plus.`;
+                                            const whatsappNumber = '242067553626'; // Remplace par ton numéro
+                                            const encodedMessage = encodeURIComponent(message);
+                                            const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
+                                            window.open(whatsappUrl, '_blank');
+                                        }
+                                    </script>
                                 </div>
                             </div>
                             <!-- End Banner Left Content -->
