@@ -60,7 +60,7 @@
                             <a href="#">Se connecter</a>
                         </li>
                         <li>
-                            <a href="#">Contacter</a>
+                            <a href="tel:=242068005449">Contacter</a>
                         </li>
                     </ul>
                 </div>
@@ -124,13 +124,13 @@
                                     
                                         <!-- Bouton WhatsApp intégré -->
                                         <button onclick="sendToWhatsApp()" style="padding: 10px 25px; background-color: #d81518; color: white; border: none; border-radius: 5px; font-size: 16px;">
-                                            Nous contacter 
+                                            Nous contacter WhatsApp
                                         </button>
                                     </section>
                                     
                                     <script>
                                         function sendToWhatsApp() {
-                                            const message = `Bonjour LinkByte,\nJe suis intéressé(e) par vos services et j’aimerais en savoir plus.`;
+                                            const message = `Bonjour`;
                                             const whatsappNumber = '242068005449'; // Remplace par ton numéro
                                             const encodedMessage = encodeURIComponent(message);
                                             const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
